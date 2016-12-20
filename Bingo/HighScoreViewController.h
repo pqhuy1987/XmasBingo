@@ -10,7 +10,7 @@
 #import "AppDelegate.h"
 #import "Entity.h"
 //#import <iAd/iAd.h>
-@import GoogleMobileAds;
+
 @interface HighScoreViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>
 
 

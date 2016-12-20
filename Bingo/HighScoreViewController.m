@@ -19,7 +19,6 @@
     NSData *compareData;
     NSMutableArray *tempArray2;
     UIBarButtonItem *rightButton;
-    GADBannerView *rectangleAdView;
 }
 @end
 
@@ -79,7 +78,7 @@
 
 -(void)dealloc
 {
-    rectangleAdView=nil;
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -283,19 +282,6 @@
 -(void) showBannerAd
 {
 
-    _highScoreTable.frame=CGRectMake(_highScoreTable.frame.origin.x, _highScoreTable.frame.origin.y, _highScoreTable.frame.size.width, [[UIScreen mainScreen]bounds].size.height-_topLabelView.frame.size.height-BANNER_HEIGHT-self.navigationController.navigationBar.frame.size.height);
-    
-    rectangleAdView = [[GADBannerView alloc]initWithFrame:
-                       CGRectMake(0, _highScoreTable.frame.origin.y+_highScoreTable.frame.size.height, 320, BANNER_HEIGHT-20)];
-    
-    [rectangleAdView setBackgroundColor:[UIColor clearColor]];
-    
-    
-    rectangleAdView.adUnitID = BANNER_AD_ID;
-    rectangleAdView.rootViewController = self;
-    [rectangleAdView loadRequest:[GADRequest request]];
-    
-    [self.view addSubview: rectangleAdView];
 
     
 }

@@ -14,9 +14,8 @@
 #import "ScoreAlertPopUpView.h"
 #import "GCTurnBasedMatchHelper.h"
 #import "GameCenterManager.h"
-//#import <iAd/iAd.h>
-@import GoogleMobileAds;
-@interface MainGameViewController : UIViewController<UIScrollViewDelegate,UIGestureRecognizerDelegate,UIAlertViewDelegate,UITextFieldDelegate,finalPopViewDelegate,popViewDelegate,scoreViewDelegate,GADInterstitialDelegate,GCTurnBasedMatchHelperDelegate,GameCenterManagerDelegate>
+
+@interface MainGameViewController : UIViewController<UIScrollViewDelegate,UIGestureRecognizerDelegate,UIAlertViewDelegate,UITextFieldDelegate,finalPopViewDelegate,popViewDelegate,scoreViewDelegate,GCTurnBasedMatchHelperDelegate,GameCenterManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 

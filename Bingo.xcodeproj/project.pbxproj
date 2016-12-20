@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		481556881A711A4C00AC5D32 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481556871A711A4C00AC5D32 /* GameKit.framework */; };
-		9C53AD5427147E46863CF22D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F845A01410F26A42644CD31B /* libPods.a */; };
 		C8008D4B1839FC520031DDC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8008D4A1839FC520031DDC9 /* Foundation.framework */; };
 		C8008D4D1839FC520031DDC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8008D4C1839FC520031DDC9 /* CoreGraphics.framework */; };
 		C8008D4F1839FC520031DDC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8008D4E1839FC520031DDC9 /* UIKit.framework */; };
@@ -116,9 +115,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		061845A74306BF2BF5126FC8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		481556871A711A4C00AC5D32 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
-		8A188BB78A690051308DEA41 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		C8008D471839FC520031DDC9 /* Bingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8008D4A1839FC520031DDC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C8008D4C1839FC520031DDC9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -240,7 +237,6 @@
 		C8FDDA1A1AD67EC100BF2310 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		C8FDDA1D1AD67ED800BF2310 /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
 		C8FDDA1E1AD67ED800BF2310 /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
-		F845A01410F26A42644CD31B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,7 +259,6 @@
 				C8008D4F1839FC520031DDC9 /* UIKit.framework in Frameworks */,
 				C8008D4B1839FC520031DDC9 /* Foundation.framework in Frameworks */,
 				481556881A711A4C00AC5D32 /* GameKit.framework in Frameworks */,
-				9C53AD5427147E46863CF22D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +282,6 @@
 				C8008D6F1839FC520031DDC9 /* BingoTests */,
 				C8008D491839FC520031DDC9 /* Frameworks */,
 				C8008D481839FC520031DDC9 /* Products */,
-				F8C6F09BBD11D50F1D43EAA1 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -319,7 +313,6 @@
 				C8008D4C1839FC520031DDC9 /* CoreGraphics.framework */,
 				C8008D4E1839FC520031DDC9 /* UIKit.framework */,
 				C8008D691839FC520031DDC9 /* XCTest.framework */,
-				F845A01410F26A42644CD31B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -650,15 +643,6 @@
 			name = Internet;
 			sourceTree = "<group>";
 		};
-		F8C6F09BBD11D50F1D43EAA1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				061845A74306BF2BF5126FC8 /* Pods.debug.xcconfig */,
-				8A188BB78A690051308DEA41 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -666,11 +650,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8008D791839FC520031DDC9 /* Build configuration list for PBXNativeTarget "Bingo" */;
 			buildPhases = (
-				02D0BB69B365E92D9C32AD2A /* Check Pods Manifest.lock */,
 				C8008D431839FC520031DDC9 /* Sources */,
 				C8008D441839FC520031DDC9 /* Frameworks */,
 				C8008D451839FC520031DDC9 /* Resources */,
-				3DF18612F38E585C4F60BB4F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -807,39 +789,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		02D0BB69B365E92D9C32AD2A /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		3DF18612F38E585C4F60BB4F /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C8008D431839FC520031DDC9 /* Sources */ = {
@@ -995,7 +944,6 @@
 		};
 		C8008D7A1839FC520031DDC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 061845A74306BF2BF5126FC8 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1015,7 +963,6 @@
 		};
 		C8008D7B1839FC520031DDC9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A188BB78A690051308DEA41 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

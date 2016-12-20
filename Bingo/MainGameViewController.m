@@ -38,9 +38,7 @@
     UIAlertView *myresultAlert,*alertPopUp;
     AppDelegate *appObject;
     
-    //For iAd
-    //    ADInterstitialAd *interstitial;
-    GADInterstitial *interstitial;
+
     BOOL requestingAd;
     
     
@@ -67,7 +65,6 @@
 {
     [super viewDidLoad];
     
-    [self showInterstitialAd];
     requestingAd = NO;
     self.appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
     __managedObjectContext = [self.appDelegate managedObjectContext];
@@ -2926,62 +2923,6 @@
 //}
 //Interstitial iAd
 
-/*-(void)showInterstitialAd
- {
- //Check if already requesting ad
- if (requestingAd == NO) {
- interstitial = [[ADInterstitialAd alloc] init];
- interstitial.delegate = self;
- self.interstitialPresentationPolicy = ADInterstitialPresentationPolicyManual;
- [self requestInterstitialAdPresentation];
- NSLog(@"interstitialAdREQUEST");
- requestingAd = YES;
- }//end if
- }
- */
-
--(void)showInterstitialAd
-{
-    interstitial = [[GADInterstitial alloc] init];
-    interstitial.adUnitID = INTERSTITIAL_AD_ID;
-    interstitial.delegate = self;
-    
-    GADRequest *request = [GADRequest request];
-    
-    //    request.testDevices = @[
-    //                            @"580a56362446677751cf58f0580ed61b"  //test device id
-    //                            ];
-    [interstitial loadRequest:request];
-    
-    
-    
-}
-
--(void) showAd
-{
-    if (interstitial.isReady) {
-        [interstitial presentFromRootViewController:self];
-    } else {
-        [[[UIAlertView alloc] initWithTitle:@"Interstitial not ready"
-                                    message:@"The interstitial didn't finish loading or failed to load"
-                                   delegate:self
-                          cancelButtonTitle:@"Cancel"
-                          otherButtonTitles:nil] show];
-    }
-}
-
-#pragma mark -
-#pragma mark ADBannerViewDelegate
-
-- (void)interstitial:(GADInterstitial *)interstitial
-didFailToReceiveAdWithError:(GADRequestError *)error {
-    NSLog(@"interstitialDidFailToReceiveAdWithError: %@", [error localizedDescription]);
-}
-
-- (void)interstitialDidDismissScreen:(GADInterstitial *)interstitial {
-    NSLog(@"interstitialDidDismissScreen");
-    [self showInterstitialAd];
-}
 
 #pragma mark - GCTurnBasedMatchHelperDelegate
 
