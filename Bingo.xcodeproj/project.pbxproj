@@ -38,7 +38,6 @@
 		C84A015B1ADBE9D600087B4A /* win_stage_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C84A01551ADBE9D600087B4A /* win_stage_icon.png */; };
 		C84A015C1ADBE9D600087B4A /* win_stage_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C84A01561ADBE9D600087B4A /* win_stage_icon@2x.png */; };
 		C865DEA019909EA600B6C51B /* MainGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C865DE9F19909EA600B6C51B /* MainGameViewController.m */; };
-		C869474C19C01E4D00816991 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C869474B19C01E4D00816991 /* iAd.framework */; };
 		C86A32881A84B898008A2EA0 /* GCTurnBasedMatchHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C86A32871A84B898008A2EA0 /* GCTurnBasedMatchHelper.m */; };
 		C876480E19AF4C9200F298C8 /* SettingSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C876480D19AF4C9200F298C8 /* SettingSelectionViewController.m */; };
 		C876481219AF50A900F298C8 /* InbuiltThemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C876481119AF50A900F298C8 /* InbuiltThemeViewController.m */; };
@@ -51,7 +50,6 @@
 		C898E53D1A82402D007F6C76 /* normal_btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C898E51B1A82402D007F6C76 /* normal_btn@2x.png */; };
 		C898E53E1A82402D007F6C76 /* popup_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = C898E51C1A82402D007F6C76 /* popup_bg.png */; };
 		C898E53F1A82402D007F6C76 /* popup_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C898E51D1A82402D007F6C76 /* popup_bg@2x.png */; };
-		C89F64941A8DFA4C00857EB5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C89F64931A8DFA4C00857EB5 /* AdSupport.framework */; };
 		C89F64961A8DFA5C00857EB5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C89F64951A8DFA5C00857EB5 /* AudioToolbox.framework */; };
 		C89F64981A8DFA6400857EB5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C89F64971A8DFA6400857EB5 /* AVFoundation.framework */; };
 		C89F649A1A8DFA7300857EB5 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C89F64991A8DFA7300857EB5 /* CoreTelephony.framework */; };
@@ -159,7 +157,6 @@
 		C84A01561ADBE9D600087B4A /* win_stage_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "win_stage_icon@2x.png"; sourceTree = "<group>"; };
 		C865DE9E19909EA600B6C51B /* MainGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainGameViewController.h; sourceTree = "<group>"; };
 		C865DE9F19909EA600B6C51B /* MainGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainGameViewController.m; sourceTree = "<group>"; };
-		C869474B19C01E4D00816991 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		C86A32861A84B898008A2EA0 /* GCTurnBasedMatchHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCTurnBasedMatchHelper.h; sourceTree = "<group>"; };
 		C86A32871A84B898008A2EA0 /* GCTurnBasedMatchHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCTurnBasedMatchHelper.m; sourceTree = "<group>"; };
 		C876480C19AF4C9200F298C8 /* SettingSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingSelectionViewController.h; sourceTree = "<group>"; };
@@ -175,7 +172,6 @@
 		C898E51B1A82402D007F6C76 /* normal_btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "normal_btn@2x.png"; sourceTree = "<group>"; };
 		C898E51C1A82402D007F6C76 /* popup_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popup_bg.png; sourceTree = "<group>"; };
 		C898E51D1A82402D007F6C76 /* popup_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popup_bg@2x.png"; sourceTree = "<group>"; };
-		C89F64931A8DFA4C00857EB5 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		C89F64951A8DFA5C00857EB5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C89F64971A8DFA6400857EB5 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		C89F64991A8DFA7300857EB5 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
@@ -260,8 +256,6 @@
 				C89F649A1A8DFA7300857EB5 /* CoreTelephony.framework in Frameworks */,
 				C89F64981A8DFA6400857EB5 /* AVFoundation.framework in Frameworks */,
 				C89F64961A8DFA5C00857EB5 /* AudioToolbox.framework in Frameworks */,
-				C89F64941A8DFA4C00857EB5 /* AdSupport.framework in Frameworks */,
-				C869474C19C01E4D00816991 /* iAd.framework in Frameworks */,
 				C8F4720419B0331500A5BD51 /* CoreData.framework in Frameworks */,
 				C8B6A77E1858846E00097BFB /* CoreMedia.framework in Frameworks */,
 				C8B6A77F1858846E00097BFB /* MediaPlayer.framework in Frameworks */,
@@ -317,9 +311,7 @@
 				C89F64991A8DFA7300857EB5 /* CoreTelephony.framework */,
 				C89F64971A8DFA6400857EB5 /* AVFoundation.framework */,
 				C89F64951A8DFA5C00857EB5 /* AudioToolbox.framework */,
-				C89F64931A8DFA4C00857EB5 /* AdSupport.framework */,
 				481556871A711A4C00AC5D32 /* GameKit.framework */,
-				C869474B19C01E4D00816991 /* iAd.framework */,
 				C8F4720319B0331500A5BD51 /* CoreData.framework */,
 				C8B6A77C1858846E00097BFB /* CoreMedia.framework */,
 				C8B6A77D1858846E00097BFB /* MediaPlayer.framework */,
